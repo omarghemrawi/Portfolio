@@ -1,10 +1,9 @@
 import { useRef, useState } from "react";
 import emailjs from "@emailjs/browser";
 import validator from "validator";
-
+import { toast } from "react-toastify";
 const ContactForm = () => {
   const form = useRef();
-  const [status, setStatus] = useState("");
   const [email, setEmail] = useState("");
   const [emailStatus, setEmailStatus] = useState("");
 
@@ -13,29 +12,24 @@ const ContactForm = () => {
   };
   const sendEmail = (e) => {
     e.preventDefault();
-    console.log(email);
     if (!validateEmail(email)) {
       setEmailStatus("Enter a Valid Email");
       return;
     }
     emailjs
       .sendForm(
-        "service_6wmqu9o",
-        "template_ge907jr",
+        import.meta.env.VITE_SERVICE_ID,
+        import.meta.env.VITE_TEMPLATE_ID,
         form.current,
-        "EsCkPXPyEvOrNQGpy"
+        import.meta.env.VITE_PUBLIC_KEY
       )
       .then(
-        console.log(form.current),
         (result) => {
-          console.log(result.text);
-          setStatus("Message sent Successfuly");
+          toast.success(result.text + " , Send Successfuly");
           form.current.reset();
         },
         (error) => {
-          console.error("FAILD..", error.text);
-          setStatus("Faild To Send Message , Try Again");
-          console.log(status);
+          toast.error(error.text);
         }
       );
   };
@@ -60,7 +54,6 @@ const ContactForm = () => {
           type="text"
           name="user_email"
           placeholder="Your Email"
-          //   required
           onChange={(e) => setEmail(e.target.value)}
         />
         {validateEmail(email) ? (
