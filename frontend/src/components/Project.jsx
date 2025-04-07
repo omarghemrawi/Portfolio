@@ -15,6 +15,18 @@ const Project = () => {
           </p>
         </div>
       </div>
+
+      <div className="flex gap-6 bg-white/20 py-5 px-7 rounded-lg border border-white/20 mb-20 flex-col">
+        <div>
+          <h3 className="text-white">X-O Game</h3>
+          <p className="text-gray-200">
+           X-O Game is a real-time multiplayer Tic-Tac-Toe application built with the MERN stack,
+            offering interactive gameplay and live chat features. 
+            It includes secure user authentication,
+            seamless game synchronization, and a modern, responsive interface for an engaging player experience.
+          </p>
+        </div>
+      </div>
     </div>
   );
 };
