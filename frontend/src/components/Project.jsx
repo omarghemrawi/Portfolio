@@ -30,10 +30,11 @@ const Project = () => {
 
          <div className="flex gap-6 bg-white/20 py-5 px-7 rounded-lg border border-white/20 mb-20 flex-col">
         <div>
-          <h3 className="text-white">X-O Game</h3>
+          <h3 className="text-white">Task Manager</h3>
           <p className="text-gray-200">
           Task Manager is a productivity web application built with the MERN stack, designed to help users manage and prioritize tasks efficiently.
             It features secure authentication, real-time notifications, and a clean, responsive UI for creating, updating, and tracking tasks with ease.
+            Each task includes AI-powered priority suggestions to enhance decision-making and boost productivity.
           </p>
         </div>
       </div>
