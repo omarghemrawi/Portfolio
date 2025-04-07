@@ -15,7 +15,7 @@ const Contact = () => {
         <div className="my-10 flex flex-col gap-6">
           <div className="flex items-center gap-4">
             <FaEnvelope className="text-cyan-400 text-3xl" />
-            <p className="text-lg">ghemrawiomar@example.com</p>
+            <p className="text-lg">ghemrawiomar@gmail.com</p>
           </div>
           <div className="flex items-center gap-4">
             <FaPhone className="text-cyan-400 text-3xl" />
