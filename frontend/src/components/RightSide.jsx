@@ -1,16 +1,15 @@
 import About from "./About";
-import Contact from "./Contact";
-import Project from "./Project";
+import Projects from "./Project";
 import Skills from "./Skills";
-const RightSide = () => {
-  return (
-    <div className=" w-[100%] md:w-[50%] ">
-      <About />
-      <Project />
-      <Skills />
-      <Contact />
-    </div>
-  );
-};
+import Contact from "./Contact";
+
+const RightSide = () => (
+  <main className="w-full md:w-1/2">
+    <About />
+    <Projects />
+    <Skills />
+    <Contact />
+  </main>
+);
 
 export default RightSide;

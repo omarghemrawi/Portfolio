@@ -1,26 +1,39 @@
-const About = () => {
-  return (
-    <div
-      id="about"
-      className="text-white bg-white/20 py-3 md:py-5 px-7 rounded-lg border border-white/20 mb-20"
-    >
-      <p className="mt-1">
-        I am a <b>Computer Science graduate</b> from <b>Lebanese University</b>,
-        specializing in both <b>front-end</b> and <b>back-end development</b>,
-        with a particular focus on the <b>MERN stack</b>.
+const About = () => (
+  <section
+    id="about"
+    className="text-white bg-white/20 py-6 px-8 rounded-lg border border-white/20 mb-20"
+  >
+    <h2 className="text-3xl font-bold mb-6 text-center">About Me</h2>
+    <div className="space-y-6 text-gray-200 leading-relaxed">
+      <p>
+        I am a{" "}
+        <span className="text-white font-semibold">
+          Computer Science graduate
+        </span>{" "}
+        from{" "}
+        <span className="text-white font-semibold">Lebanese University</span>,
+        specializing in both{" "}
+        <span className="text-white font-semibold">front-end</span> and{" "}
+        <span className="text-white font-semibold">back-end development</span>,
+        with a particular focus on the{" "}
+        <span className="text-white font-semibold">MERN stack</span>.
       </p>
-      <p className="mt-7">
-        I aim to secure a role as a junior web developer, where I can apply my
-        skills while enhancing my expertise in <b>computer science</b>.
+      <p>
+        I am passionate about creating scalable, high-performance web
+        applications that deliver exceptional user experiences. My goal is to
+        secure a role as a junior web developer where I can apply my technical
+        skills while continuously expanding my expertise in modern web
+        technologies.
       </p>
-      <p className="mt-7">
-        I am excited to gain hands-on experience in web development and
-        contribute to projects utilizing advanced technologies. My ambition is
-        to continue expanding my skills and make valuable contributions to a
-        team in a collaborative environment.
+      <p>
+        I thrive in collaborative environments and am excited to contribute to
+        innovative projects that push the boundaries of what is possible on the
+        web. My commitment to clean code, best practices, and continuous
+        learning drives me to deliver quality solutions that make a meaningful
+        impact.
       </p>
     </div>
-  );
-};
+  </section>
+);
 
 export default About;
